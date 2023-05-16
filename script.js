@@ -3,32 +3,49 @@
 
 const containerElement = document.querySelector('.container');
 
+    
 
 for(let a = 1; a < 100; a++){
 
+
+    const p = document.createElement('p');
+
+    p.append('sei multiplo di' + a + 'quindi il tuo valore è:');
+    
+    containerElement.append(p);
+
+
     if ((a % 3 === 0) && (a % 5 === 0)){  
 
-        console.log('FizzBuzz');
+        p.append('FizzBuzz');
+    
+        containerElement.append(p);
 
     }else if (a % 5 === 0){
 
-        console.log('Buzz');
+        p.append('Buzz');
+    
+        containerElement.append(p);
 
     }else if (a % 3 === 0){
 
-        console.log('Fizz');
+        p.append('Fizz');
+    
+        containerElement.append(p);
 
     }else{
 
-        console.log('a')
+        p.append('number');
+    
+        containerElement.append(p);
 
     };
+    
+    
+
+ 
 };
 
 
-/*
-const p = document.createElement('p');
 
-    p.append('multiplo' + a);
-
-    containerElement.innerHTML
+   
